@@ -11,5 +11,10 @@ platforms and uses the GCC compiler instead of Borland. It also has been made
 to work on big-endian platforms (you will have to change a preprocessor
 definition in the C code for this).
 
+You can also make it use the old Japanese help text with another preprocessor
+define. By default it will compile with English help text.
+
 My version will also still build for windows using MinGW, so I think it's just
 better in nearly every way than the original.
+
+The original Japanese Windows version of nhdgen [can be found here](https://hp.vector.co.jp/authors/VA013937/editdisk/nhdgen.html).
