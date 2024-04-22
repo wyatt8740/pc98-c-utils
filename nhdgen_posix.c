@@ -157,7 +157,7 @@ int32_t autoHeader(const char *srcfile, LP_NHD_FILE_HEAD pnfh) {
         ||(memcmp(((BOOT_RECORD_FAT32*)buf)->strFATName, "FAT32   ", 8)==0))
     {
       BOOT_RECORD_FAT16 *pbr = (BOOT_RECORD_FAT16*)buf;
-      printf("Partition boot block found at offset %d.\n", ftell(fp));
+      printf("Partition boot block found at offset %ld.\n", ftell(fp));
       pnfh->wHead = pbr->BIOSHeads;
       pnfh->wSect = pbr->BIOSSectors;
       pnfh->wSectLen = nhdgen_16le(SECTOR_LENGTH);
