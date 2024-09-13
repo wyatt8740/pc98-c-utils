@@ -280,7 +280,6 @@ int writeHeader(LP_NHD_FILE_HEAD pnfh, const char* dstfile)
 int main(int argc, char **argv)
 {
   NHD_FILE_HEAD nfh;
-  FILE* fp;
   char strbuf[0x100];
   int i;
   const char *srcfile = "";
